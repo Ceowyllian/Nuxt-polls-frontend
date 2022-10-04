@@ -1,16 +1,18 @@
 <template>
-  <v-row align="center" justify="center">
-    <v-col cols="12" md="6" sm="8">
-      <v-card>
-      </v-card>
-    </v-col>
-  </v-row>
+  <v-card>
+    <v-card-text>
+      Index page
+    </v-card-text>
+    <v-card-actions>
+      <v-btn nuxt to="polls">
+        Go to polls
+      </v-btn>
+    </v-card-actions>
+  </v-card>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
-  components: {
-  }
+  name: 'IndexPage'
 }
 </script>
