@@ -1,12 +1,6 @@
 <template>
   <v-app dark>
-    <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
-      <v-toolbar-title>{{ title }}</v-toolbar-title>
-    </v-app-bar>
+    <TopNavigation />
     <v-main>
       <v-container>
         <Nuxt />
@@ -16,13 +10,13 @@
 </template>
 
 <script>
+import TopNavigation from '../components/TopNavigation'
+
 export default {
   name: 'DefaultLayout',
+  components: { TopNavigation },
   data () {
-    return {
-      clipped: false,
-      title: 'Vuetify.js'
-    }
+    return {}
   }
 }
 </script>
